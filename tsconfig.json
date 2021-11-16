@@ -2,7 +2,13 @@
     "compilerOptions": {
         "outDir": "./build",
         "allowJs": true,
-        "target": "es5"
+        "target": "es6",
+        "pretty": true,
+        "sourceMap": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "esModuleInterop": true
     },
-    "include": ["./src/**/*"]
+    "include": ["./src/**/*"],
+    "exclude": ["node_modules", "spec"]
 }
