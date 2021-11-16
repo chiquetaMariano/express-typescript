@@ -1,0 +1,7 @@
+# dependencies and configs
+node_modules
+*.json
+.env
+
+# artifacts
+build
