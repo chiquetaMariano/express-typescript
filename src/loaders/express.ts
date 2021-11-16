@@ -1,10 +1,10 @@
-const express = require('express');
-const logger = require('morgan');
-const cookieParser = require('cookie-parser');
-const path = require('path');
-const indexRouter = require('../routes');
+import express from 'express';
+import logger from 'morgan';
+import cookieParser from 'cookie-parser';
+import path from 'path';
+import indexRouter from '../routes';
 
-module.exports = (app) => {
+export default (app: express.Application ) => {
     app.use(logger('dev'));
     app.use(express.json());
     app.use(express.urlencoded({ extended: false }));
