@@ -1,8 +1,8 @@
-const config = require('./config');
-const express = require('express');
-const loaders = require('./loaders');
+import config from './config';
+import express from 'express';
+import loaders from './loaders';
 
-async function startServer() {
+async function startServer(): Promise<void> {
     const app = express();
 
     await loaders(app);

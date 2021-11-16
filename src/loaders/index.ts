@@ -1,6 +1,6 @@
 const expressLoader = require('./express');
 
-module.exports = async (app) => {
+export default async (app) => {
     // Loaders should be called here
     await expressLoader(app);
 }
